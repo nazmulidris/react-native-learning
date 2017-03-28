@@ -5,7 +5,7 @@ import {StyleSheet} from "react-native";
 
 // fonts available - https://github.com/dabit3/react-native-fonts
 // flexbox guide - https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
-const flexboxView1Styles = StyleSheet.create(
+const style2 = StyleSheet.create(
   {
     container: {
       flex: 1,
@@ -37,7 +37,7 @@ const flexboxView1Styles = StyleSheet.create(
       fontSize: 12,
       fontWeight: '200',
       fontFamily: 'monospace',
-      flex: -1,
+      flex: 1,
       color: '#697689',
       backgroundColor: '#d4c4fb',
       margin: 16,
@@ -46,7 +46,7 @@ const flexboxView1Styles = StyleSheet.create(
   }
 );
 
-const flexboxView2Styles = StyleSheet.create(
+const style3 = StyleSheet.create(
   {
     container: {
       overflow: 'visible',
@@ -54,12 +54,11 @@ const flexboxView2Styles = StyleSheet.create(
       flex: 1,
       alignItems: 'stretch',
       justifyContent: 'flex-start',
-      flexDirection: 'column-reverse',
+      flexDirection: 'column',
       backgroundColor: '#8ed1fc'
     },
     image: {
-      flex: 1,
-      alignSelf: 'stretch'
+      flex: 1
     },
     text1: {
       alignSelf: 'flex-end',
@@ -95,7 +94,7 @@ const flexboxView2Styles = StyleSheet.create(
   }
 );
 
-const mainViewStyles = StyleSheet.create(
+const style1 = StyleSheet.create(
   {
     container: {
       flex: 1,
@@ -115,7 +114,7 @@ const mainViewStyles = StyleSheet.create(
     },
   });
 
-function imageViewStyles(width: number, height: number) {
+function style1_image(width: number, height: number) {
   return StyleSheet.create(
     {
       imageSize: {
@@ -129,4 +128,4 @@ function imageViewStyles(width: number, height: number) {
 }
 
 
-export {mainViewStyles, imageViewStyles, flexboxView1Styles, flexboxView2Styles};
+export {style1, style1_image, style2, style3};

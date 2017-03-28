@@ -3,7 +3,7 @@
 import React, {Component} from "react";
 import {Image, StatusBar, Text, View} from "react-native";
 
-import {flexboxView2Styles} from "../styles/Styles";
+import {style3} from "../styles/Styles";
 
 class FlexboxView2 extends Component {
   constructor(props) {
@@ -22,16 +22,16 @@ class FlexboxView2 extends Component {
     let msg2: string = "Details Text";
     
     return (
-      <View style={flexboxView2Styles.container}>
+      <View style={style3.container}>
         <StatusBar hidden={true} translucent={true} animated={true}
                    barStyle={'light-content'} backgroundColor={'#1273de'}/>
-        <Image style={flexboxView2Styles.image} source={img}/>
-        <Text style={flexboxView2Styles.text1}>{msg1}</Text>
-        <Text style={flexboxView2Styles.text2}>{msg2}</Text>
-        <Text style={flexboxView2Styles.text3}>{this.state.longText}</Text>
-        <Text style={flexboxView2Styles.text3}>{this.state.longText}</Text>
-        <Text style={flexboxView2Styles.text3}>{this.state.longText}</Text>
-        <Text style={flexboxView2Styles.text3}>{this.state.longText}</Text>
+        <Image style={style3.image} source={img}/>
+        <Text style={style3.text1}>{msg1}</Text>
+        <Text style={style3.text2}>{msg2}</Text>
+        <Text style={style3.text3}>{this.state.longText}</Text>
+        <Text style={style3.text3}>{this.state.longText}</Text>
+        <Text style={style3.text3}>{this.state.longText}</Text>
+        <Text style={style3.text3}>{this.state.longText}</Text>
       </View>
     );
     

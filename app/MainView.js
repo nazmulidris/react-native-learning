@@ -5,7 +5,7 @@ import {Text, View} from "react-native";
 
 import type {ImageType} from "../flow/TypeAliases";
 import {ImageView} from "../app/ImageView";
-import {mainViewStyles} from "../styles/Styles";
+import {style1} from "../styles/Styles";
 
 const imageUrl: ImageType = {
   uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg',
@@ -19,14 +19,14 @@ class MainView extends Component {
   
   render() {
     return (
-      <View style={mainViewStyles.container}>
-        <Text style={mainViewStyles.welcome}>
+      <View style={style1.container}>
+        <Text style={style1.welcome}>
           Welcome to R3BL RN!
         </Text>
-        <Text style={mainViewStyles.instructions}>
+        <Text style={style1.instructions}>
           To get started, edit index.android.js
         </Text>
-        <Text style={mainViewStyles.instructions}>
+        <Text style={style1.instructions}>
           Double tap R on your keyboard to reload,{'\n'}
           Shake or press menu button for dev menu
         </Text>

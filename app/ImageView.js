@@ -3,14 +3,14 @@
 import React, {Component} from "react";
 
 import {Image} from "react-native";
-import {imageViewStyles} from "../styles/Styles";
+import {style1_image} from "../styles/Styles";
 
 class ImageView extends Component {
   render() {
     
     let {uri, width, height} = this.props;
   
-    const styles = imageViewStyles(width, height);
+    const styles = style1_image(width, height);
     
     return (
       <Image source={{uri}} style={[styles.imageSize, styles.padding]}/>
