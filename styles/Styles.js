@@ -46,6 +46,7 @@ const style2 = StyleSheet.create(
   }
 );
 
+// more info on images - https://facebook.github.io/react-native/docs/images.html
 const style3 = StyleSheet.create(
   {
     container: {
@@ -57,8 +58,15 @@ const style3 = StyleSheet.create(
       flexDirection: 'column',
       backgroundColor: '#8ed1fc'
     },
-    image: {
-      flex: 1
+    img_static: {
+      flex: 1,
+      width: undefined,
+      height: undefined,
+      resizeMode: 'cover'
+    },
+    img_network: {
+      flex: 1,
+      resizeMode: 'contain'
     },
     text1: {
       alignSelf: 'flex-end',
@@ -89,6 +97,14 @@ const style3 = StyleSheet.create(
       color: '#697689',
       backgroundColor: '#d4c4fb',
       margin: 16,
+      padding: 16,
+    },
+    text4: {
+      color: '#1273de',
+      backgroundColor: 'rgba(212, 196, 251, 0.5)',
+      fontSize: 12,
+      fontWeight: '200',
+      fontFamily: 'monospace',
       padding: 16,
     }
   }

@@ -18,14 +18,20 @@ class FlexboxView2 extends Component {
   
   render() {
     let msg1: string = "Flexbox View";
-    let img = {uri: "http://i.imgur.com/RRUe0Mo.png"};
     let msg2: string = "Details Text";
+    let img_network = {uri: "http://i.imgur.com/RRUe0Mo.png"};
+    let img_static = require('../static-res/maldives.jpg');
     
     return (
       <View style={style3.container}>
         <StatusBar hidden={true} translucent={true} animated={true}
                    barStyle={'light-content'} backgroundColor={'#1273de'}/>
-        <Image style={style3.image} source={img}/>
+        <Image style={style3.img_static} source={img_static}>
+          <Text style={style3.text4}>Maldives Local Image</Text>
+        </Image>
+        <Image style={style3.img_network} source={img_network}>
+          <Text style={style3.text4}>Maldives Network Image</Text>
+        </Image>
         <Text style={style3.text1}>{msg1}</Text>
         <Text style={style3.text2}>{msg2}</Text>
         <Text style={style3.text3}>{this.state.longText}</Text>
