@@ -3,7 +3,7 @@
 import React, {Component} from "react";
 import {Image, StatusBar, Text, View} from "react-native";
 
-import {style3} from "../styles/Styles";
+import {flexboxview2_style} from "../styles/Styles";
 
 class FlexboxView2 extends Component {
   constructor(props) {
@@ -23,21 +23,21 @@ class FlexboxView2 extends Component {
     let img_static = require('../static-res/maldives.jpg');
     
     return (
-      <View style={style3.container}>
+      <View style={flexboxview2_style.container}>
         <StatusBar hidden={true} translucent={true} animated={true}
                    barStyle={'light-content'} backgroundColor={'#1273de'}/>
-        <Image style={style3.img_static} source={img_static}>
-          <Text style={style3.text4}>Maldives Local Image</Text>
+        <Image style={flexboxview2_style.img_static} source={img_static}>
+          <Text style={flexboxview2_style.text4}>Maldives Local Image</Text>
         </Image>
-        <Image style={style3.img_network} source={img_network}>
-          <Text style={style3.text4}>Maldives Network Image</Text>
+        <Image style={flexboxview2_style.img_network} source={img_network}>
+          <Text style={flexboxview2_style.text4}>Maldives Network Image</Text>
         </Image>
-        <Text style={style3.text1}>{msg1}</Text>
-        <Text style={style3.text2}>{msg2}</Text>
-        <Text style={style3.text3}>{this.state.longText}</Text>
-        <Text style={style3.text3}>{this.state.longText}</Text>
-        <Text style={style3.text3}>{this.state.longText}</Text>
-        <Text style={style3.text3}>{this.state.longText}</Text>
+        <Text style={flexboxview2_style.text1}>{msg1}</Text>
+        <Text style={flexboxview2_style.text2}>{msg2}</Text>
+        <Text style={flexboxview2_style.text3}>{this.state.longText}</Text>
+        <Text style={flexboxview2_style.text3}>{this.state.longText}</Text>
+        <Text style={flexboxview2_style.text3}>{this.state.longText}</Text>
+        <Text style={flexboxview2_style.text3}>{this.state.longText}</Text>
       </View>
     );
     

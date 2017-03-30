@@ -3,7 +3,7 @@
 import React, {Component} from "react";
 import {Text, View} from "react-native";
 
-import {style2} from "../styles/Styles";
+import {flexboxview1_style} from "../styles/Styles";
 
 class FlexboxView1 extends Component {
   constructor(props) {
@@ -21,13 +21,13 @@ class FlexboxView1 extends Component {
     let msg2: string = "Details Text";
     
     return (
-      <View style={style2.container}>
-        <Text style={style2.text1}>{msg1}</Text>
-        <Text style={style2.text2}>{msg2}</Text>
-        <Text style={style2.text3}>{this.state.longText}</Text>
-        <Text style={style2.text3}>{this.state.longText}</Text>
-        <Text style={style2.text3}>{this.state.longText}</Text>
-        <Text style={style2.text3}>{this.state.longText}</Text>
+      <View style={flexboxview1_style.container}>
+        <Text style={flexboxview1_style.text1}>{msg1}</Text>
+        <Text style={flexboxview1_style.text2}>{msg2}</Text>
+        <Text style={flexboxview1_style.text3}>{this.state.longText}</Text>
+        <Text style={flexboxview1_style.text3}>{this.state.longText}</Text>
+        <Text style={flexboxview1_style.text3}>{this.state.longText}</Text>
+        <Text style={flexboxview1_style.text3}>{this.state.longText}</Text>
       </View>
     );
   }

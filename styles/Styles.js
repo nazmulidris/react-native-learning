@@ -5,7 +5,7 @@ import {StyleSheet} from "react-native";
 
 // fonts available - https://github.com/dabit3/react-native-fonts
 // flexbox guide - https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
-const style2 = StyleSheet.create(
+const flexboxview1_style = StyleSheet.create(
   {
     container: {
       flex: 1,
@@ -47,7 +47,7 @@ const style2 = StyleSheet.create(
 );
 
 // more info on images - https://facebook.github.io/react-native/docs/images.html
-const style3 = StyleSheet.create(
+const flexboxview2_style = StyleSheet.create(
   {
     container: {
       overflow: 'visible',
@@ -110,7 +110,24 @@ const style3 = StyleSheet.create(
   }
 );
 
-const style1 = StyleSheet.create(
+export const router_style = StyleSheet.create(
+  {
+    container: {
+      flex: 1,
+      backgroundColor: '#c1e1c5',
+    },
+    text1: {
+      flex: -1,
+      color: '#1273de',
+      backgroundColor: '#d4c4fb',
+      fontSize: 18,
+      fontWeight: '200',
+      fontFamily: 'monospace',
+      padding: 16,
+    }
+  });
+
+const mainview_style = StyleSheet.create(
   {
     container: {
       flex: 1,
@@ -130,7 +147,7 @@ const style1 = StyleSheet.create(
     },
   });
 
-function style1_image(width: number, height: number) {
+function mainview_style_image(width: number, height: number) {
   return StyleSheet.create(
     {
       imageSize: {
@@ -144,4 +161,9 @@ function style1_image(width: number, height: number) {
 }
 
 
-export {style1, style1_image, style2, style3};
+export {
+  mainview_style,
+  mainview_style_image,
+  flexboxview1_style,
+  flexboxview2_style,
+};
