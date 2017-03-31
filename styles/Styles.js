@@ -18,7 +18,7 @@ const flexboxview1_style = StyleSheet.create(
       flex: -1,
       fontSize: 20,
       fontWeight: '900',
-      fontFamily: 'monospace',
+      fontFamily: 'Rubik-Regular',
       backgroundColor: '#00d084',
       margin: 16,
       padding: 16,
@@ -27,7 +27,7 @@ const flexboxview1_style = StyleSheet.create(
       flex: -1,
       fontSize: 16,
       fontWeight: '500',
-      fontFamily: 'monospace',
+      fontFamily: 'Rubik-Regular',
       color: '#c4def6',
       backgroundColor: '#1273de',
       margin: 16,
@@ -37,7 +37,7 @@ const flexboxview1_style = StyleSheet.create(
       flex: 1,
       fontSize: 12,
       fontWeight: '200',
-      fontFamily: 'monospace',
+      fontFamily: 'Rubik-Regular',
       color: '#697689',
       backgroundColor: '#d4c4fb',
       margin: 16,
@@ -73,7 +73,7 @@ const flexboxview2_style = StyleSheet.create(
       alignSelf: 'flex-end',
       fontSize: 20,
       fontWeight: '900',
-      fontFamily: 'monospace',
+      fontFamily: 'Rubik-Regular',
       backgroundColor: '#00d084',
       margin: 16,
       padding: 16,
@@ -83,7 +83,7 @@ const flexboxview2_style = StyleSheet.create(
       alignSelf: 'flex-start',
       fontSize: 16,
       fontWeight: '500',
-      fontFamily: 'monospace',
+      fontFamily: 'Rubik-Regular',
       color: '#c4def6',
       backgroundColor: '#1273de',
       margin: 16,
@@ -93,7 +93,7 @@ const flexboxview2_style = StyleSheet.create(
       flex: -1,
       fontSize: 12,
       fontWeight: '200',
-      fontFamily: 'monospace',
+      fontFamily: 'Rubik-Regular',
       color: '#697689',
       backgroundColor: '#d4c4fb',
       margin: 16,
@@ -104,7 +104,7 @@ const flexboxview2_style = StyleSheet.create(
       backgroundColor: 'rgba(212, 196, 251, 0.5)',
       fontSize: 12,
       fontWeight: '200',
-      fontFamily: 'monospace',
+      fontFamily: 'Rubik-Regular',
       padding: 16,
     }
   }
@@ -122,7 +122,7 @@ export const router_style = StyleSheet.create(
       backgroundColor: '#d4c4fb',
       fontSize: 18,
       fontWeight: '200',
-      fontFamily: 'monospace',
+      fontFamily: 'Rubik-Regular',
       padding: 16,
     }
   });
@@ -140,18 +140,16 @@ const mainview_style = StyleSheet.create(
       flex: -1, // shrink to min height & width if needed
       fontSize: 20,
       color: '#006b7699', // #RGBA supported
-      fontFamily: 'monospace', // list of families https://goo.gl/fsrJsK
+      fontFamily: 'Rubik-Regular', // list of families https://goo.gl/fsrJsK
       fontWeight: '500', // weights are between 100 and 900
-      textAlign: 'center',
-      margin: 16,
+      margin: 8,
     },
     instructions: {
       flex: -1,
-      margin: 16,
-      fontFamily: 'monospace',
+      margin: 8,
+      fontFamily: 'Rubik-Regular',
       fontSize: 12,
       color: 'rgba(33, 150, 243, 0.6)', // different ways to provide color
-      textAlign: 'center',
     },
     h_container: {
       flex: -1,
@@ -164,8 +162,8 @@ const mainview_style = StyleSheet.create(
     image: {
       flex: -1,
       margin: 8,
-      height: 150,
-      width: 100,
+      height: 100,
+      width: 75,
       resizeMode: 'contain', //'cover' | 'contain'
     },
   });
@@ -178,11 +176,10 @@ function mainview_style_image(width: number, height: number) {
         height: height,
       },
       padding: {
-        marginTop: 16,
+        marginTop: 8,
       },
     });
 }
-
 
 export {
   mainview_style,

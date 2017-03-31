@@ -7,16 +7,19 @@ import type {ImageType} from "../flow/TypeAliases";
 import {ImageView} from "../app/ImageView";
 import {mainview_style} from "../styles/Styles";
 
+// note uri won't work on iOS with http
 const imageUrl: ImageType = {
-  uri: 'http://moduscreate.com/wp-content/uploads/2015/07/ReactNativelogo.png',
+  uri: 'https://scontent.fsnc1-1.fna.fbcdn.net/v/t31.0-8/10659017_10102325633977818_5355456429616362295_o.jpg?oh=299b71a4d1ea43e010c6a91fbe75fb3d&oe=5959721C',
   alt_text: 'react native icon'
 };
 
+// note uri won't work on iOS with http
 const imageUrl2: ImageType = {
   uri: 'https://lh3.ggpht.com/XL0CrI8skkxnboGct-duyg-bZ_MxJDTrjczyjdU8OP2PM1dmj7SP4jL1K8JQeMIB3AM=w300',
   alt_text: 'android'
 };
 
+// note uri won't work on iOS with http
 const imageUrl3: ImageType = {
   uri: 'https://cdn0.iconfinder.com/data/icons/Android-R2-png/512/Market-Android-R.png',
   alt_text: 'google play store'
@@ -34,9 +37,6 @@ class MainView extends Component {
                    barStyle={'light-content'} backgroundColor={'#1273de'}/>
         <Text style={mainview_style.welcome}>
           Welcome to R3BL RN!
-        </Text>
-        <Text style={mainview_style.instructions}>
-          To get started, edit index.android.js
         </Text>
         <Text style={mainview_style.instructions}>
           Double tap R on your keyboard to reload,{'\n'}

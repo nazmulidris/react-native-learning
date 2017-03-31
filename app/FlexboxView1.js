@@ -1,7 +1,7 @@
 // @flow
 
 import React, {Component} from "react";
-import {ScrollView, StatusBar, Text, View} from "react-native";
+import {ScrollView, StatusBar, Text, TouchableHighlight, View} from "react-native";
 
 import {flexboxview1_style} from "../styles/Styles";
 
@@ -25,7 +25,16 @@ class FlexboxView1 extends Component {
         <ScrollView>
           <StatusBar hidden={true} translucent={true} animated={true}
                      barStyle={'light-content'} backgroundColor={'#1273de'}/>
-          <Text style={flexboxview1_style.text1}>{msg1}</Text>
+  
+          <TouchableHighlight
+            activeOpacity={1}
+            underlayColor='#c1e1c5'
+            onPress={() => {
+              this.props.navigator.pop();
+            }}>
+            <Text style={flexboxview1_style.text1}>{msg1}</Text>
+          </TouchableHighlight>
+          
           <Text style={flexboxview1_style.text2}>{msg2}</Text>
           <Text style={flexboxview1_style.text3}>{this.state.longText}</Text>
           <Text style={flexboxview1_style.text3}>{this.state.longText}</Text>
@@ -54,5 +63,9 @@ class FlexboxView1 extends Component {
   }
   
 }// end FlexBoxView1
+
+FlexboxView1.propTypes = {
+  navigator: React.PropTypes.object.isRequired,
+};
 
 export {FlexboxView1};
