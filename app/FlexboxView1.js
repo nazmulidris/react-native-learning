@@ -1,7 +1,7 @@
 // @flow
 
 import React, {Component} from "react";
-import {Text, View} from "react-native";
+import {StatusBar, Text, View} from "react-native";
 
 import {flexboxview1_style} from "../styles/Styles";
 
@@ -22,6 +22,8 @@ class FlexboxView1 extends Component {
     
     return (
       <View style={flexboxview1_style.container}>
+        <StatusBar hidden={true} translucent={true} animated={true}
+                   barStyle={'light-content'} backgroundColor={'#1273de'}/>
         <Text style={flexboxview1_style.text1}>{msg1}</Text>
         <Text style={flexboxview1_style.text2}>{msg2}</Text>
         <Text style={flexboxview1_style.text3}>{this.state.longText}</Text>

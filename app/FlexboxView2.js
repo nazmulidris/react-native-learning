@@ -1,7 +1,7 @@
 // @flow
 
 import React, {Component} from "react";
-import {Image, StatusBar, Text, View} from "react-native";
+import {Image, Text, View} from "react-native";
 
 import {flexboxview2_style} from "../styles/Styles";
 
@@ -24,8 +24,6 @@ class FlexboxView2 extends Component {
     
     return (
       <View style={flexboxview2_style.container}>
-        <StatusBar hidden={true} translucent={true} animated={true}
-                   barStyle={'light-content'} backgroundColor={'#1273de'}/>
         <Image style={flexboxview2_style.img_static} source={img_static}>
           <Text style={flexboxview2_style.text4}>Maldives Local Image</Text>
         </Image>

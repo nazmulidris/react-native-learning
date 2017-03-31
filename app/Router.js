@@ -1,13 +1,7 @@
 // @flow
 
 import React, {Component} from "react";
-import {
-  BackAndroid,
-  Navigator,
-  Text,
-  ToastAndroid,
-  TouchableHighlight
-} from "react-native";
+import {BackAndroid, Navigator, ToastAndroid} from "react-native";
 
 import {MainView} from "./MainView";
 import {FlexboxView1} from "./FlexboxView1";
@@ -22,19 +16,21 @@ import * as styles from "../styles/Styles";
 
 const routes = [
   {
-    title: 'mainview',
+    name: 'main view',
     index: 0
   },
   {
-    title: 'flexboxview1',
+    name: 'flexbox view 1',
     index: 1
   },
   {
-    title: 'flexboxview2',
+    name: 'flexbox view 2',
     index: 2
   },
 
 ];
+
+let _navigator;
 
 //
 // This class holds the Navigator component
@@ -42,21 +38,16 @@ const routes = [
 
 class Router extends Component {
   
-  renderScene(route, navigator) {
-    return (
-      <TouchableHighlight onPress={
-        () => {
-          if (route.index === 0) {
-            navigator.push(routes[1]);
-          } else {
-            navigator.pop();
-          }
-        }
-      }>
-        <Text style={styles.router_style.text1}>Show {route.title}</Text>
-      </TouchableHighlight>
-    );
-  };
+  constructor(props) {
+    super(props);
+    BackAndroid.addEventListener('hardwareBackPress', () => {
+      if (_navigator.getCurrentRoutes().length === 1) {
+        return false;
+      }
+      _navigator.pop();
+      return true;
+    })
+  }
   
   render() {
     return (
@@ -69,12 +60,31 @@ class Router extends Component {
     );
   }
   
+  renderScene(route, navigator) {
+    _navigator = navigator;
+    switch (route.index) {
+      case 0:
+        return (
+          <MainView navigator={navigator} title={route.name}/>
+        );
+      case 1:
+        return (
+          <FlexboxView1 navigator={navigator} title={route.name}/>
+        );
+      case 2:
+        return (
+          <FlexboxView2 navigator={navigator} title={route.name}/>
+        );
+    }
+    
+  };
+  
   //
   // Back button handling for Android
   //
   
   backButtonListener() {
-    let msg = `hardware back press route=[${route.index}, ${route.title}]`;
+    let msg = `hardware back press route=[${route.index}, ${route.name}]`;
     ToastAndroid.show(msg, 5000);
     return true;
     // if (route.index === 0) {
@@ -94,9 +104,9 @@ class Router extends Component {
   // old render code
   //
   
-  render2() {
+  render_old() {
     
-    let route = 2;
+    let route = 0;
     
     switch (route) {
       case 0:

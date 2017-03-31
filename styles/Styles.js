@@ -145,6 +145,12 @@ const mainview_style = StyleSheet.create(
       color: '#333333',
       marginBottom: 5,
     },
+    image: {
+      marginTop: 16,
+      height: 100,
+      width: 100,
+      resizeMode: 'contain',
+    },
   });
 
 function mainview_style_image(width: number, height: number) {
