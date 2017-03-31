@@ -8,8 +8,8 @@ import {ImageView} from "../app/ImageView";
 import {mainview_style} from "../styles/Styles";
 
 const imageUrl: ImageType = {
-  uri: 'https://upload.wikimedia.org/wikipedia/commons/d/de/Bananavarieties.jpg',
-  alt_text: 'banana'
+  uri: 'http://moduscreate.com/wp-content/uploads/2015/07/ReactNativelogo.png',
+  alt_text: 'react native icon'
 };
 
 const imageUrl2: ImageType = {
@@ -29,7 +29,7 @@ class MainView extends Component {
   
   render() {
     return (
-      <View style={mainview_style.container}>
+      <View style={mainview_style.v_container}>
         <StatusBar hidden={true} translucent={true} animated={true}
                    barStyle={'light-content'} backgroundColor={'#1273de'}/>
         <Text style={mainview_style.welcome}>
@@ -42,24 +42,28 @@ class MainView extends Component {
           Double tap R on your keyboard to reload,{'\n'}
           Shake or press menu button for dev menu
         </Text>
-  
-        <TouchableHighlight
-          activeOpacity={1}
-          underlayColor='#c1e1c5'
-          onPress={() => {
-            this.props.navigator.push({index: 1});
-          }}>
-          <Image source={imageUrl2} style={mainview_style.image}/>
-        </TouchableHighlight>
-  
-        <TouchableHighlight
-          activeOpacity={1}
-          underlayColor='#c1e1c5'
-          onPress={() => {
-            this.props.navigator.push({index: 2});
-          }}>
-          <Image source={imageUrl3} style={mainview_style.image}/>
-        </TouchableHighlight>
+    
+        <View style={mainview_style.h_container}>
+      
+          <TouchableHighlight
+            activeOpacity={1}
+            underlayColor='#c1e1c5'
+            onPress={() => {
+              this.props.navigator.push({index: 1});
+            }}>
+            <Image source={imageUrl2} style={mainview_style.image}/>
+          </TouchableHighlight>
+      
+          <TouchableHighlight
+            activeOpacity={1}
+            underlayColor='#c1e1c5'
+            onPress={() => {
+              this.props.navigator.push({index: 2});
+            }}>
+            <Image source={imageUrl3} style={mainview_style.image}/>
+          </TouchableHighlight>
+    
+        </View>
         
         <ImageView uri={imageUrl.uri} height={110} width={193}/>
       </View>

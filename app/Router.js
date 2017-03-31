@@ -52,7 +52,7 @@ class Router extends Component {
   render() {
     return (
       <Navigator
-        style={styles.router_style.container}
+        style={styles.router_style.v_container}
         initialRoute={routes[0]}
         initialRouteStack={routes}
         renderScene={this.renderScene}

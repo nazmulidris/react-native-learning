@@ -10,7 +10,7 @@ import {AppRegistry, StyleSheet, Text, View} from "react-native";
 export default class mobile_react_native extends Component {
   render() {
     return (
-      <View style={myStyles.container}>
+      <View style={myStyles.v_container}>
         <Text style={myStyles.welcome}>
           Welcome to React Native!
         </Text>

@@ -129,27 +129,44 @@ export const router_style = StyleSheet.create(
 
 const mainview_style = StyleSheet.create(
   {
-    container: {
+    v_container: {
       flex: 1,
-      justifyContent: 'center',
-      alignItems: 'center',
-      backgroundColor: '#F5FCFF',
+      flexDirection: 'column', // main axis
+      justifyContent: 'center', // main axis
+      alignItems: 'center', // cross axis
+      backgroundColor: '#c1e1c5',
     },
     welcome: {
+      flex: -1, // shrink to min height & width if needed
       fontSize: 20,
+      color: '#006b7699', // #RGBA supported
+      fontFamily: 'monospace', // list of families https://goo.gl/fsrJsK
+      fontWeight: '500', // weights are between 100 and 900
       textAlign: 'center',
-      margin: 10,
+      margin: 16,
     },
     instructions: {
+      flex: -1,
+      margin: 16,
+      fontFamily: 'monospace',
+      fontSize: 12,
+      color: 'rgba(33, 150, 243, 0.6)', // different ways to provide color
       textAlign: 'center',
-      color: '#333333',
-      marginBottom: 5,
+    },
+    h_container: {
+      flex: -1,
+      flexDirection: 'row',
+      justifyContent: 'space-around',
+      alignSelf: 'stretch', // overrides container alignItems
+      backgroundColor: '#fef3bd',
+      padding: 16,
     },
     image: {
-      marginTop: 16,
-      height: 100,
+      flex: -1,
+      margin: 8,
+      height: 150,
       width: 100,
-      resizeMode: 'contain',
+      resizeMode: 'contain', //'cover' | 'contain'
     },
   });
 

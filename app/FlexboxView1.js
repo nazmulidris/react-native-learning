@@ -21,7 +21,7 @@ class FlexboxView1 extends Component {
     let msg2: string = "Details Text";
     
     return (
-      <View style={flexboxview1_style.container}>
+      <View style={flexboxview1_style.v_container}>
         <StatusBar hidden={true} translucent={true} animated={true}
                    barStyle={'light-content'} backgroundColor={'#1273de'}/>
         <Text style={flexboxview1_style.text1}>{msg1}</Text>

@@ -23,7 +23,7 @@ class FlexboxView2 extends Component {
     let img_static = require('../static-res/maldives.jpg');
     
     return (
-      <View style={flexboxview2_style.container}>
+      <View style={flexboxview2_style.v_container}>
         <Image style={flexboxview2_style.img_static} source={img_static}>
           <Text style={flexboxview2_style.text4}>Maldives Local Image</Text>
         </Image>
