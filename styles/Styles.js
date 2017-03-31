@@ -15,29 +15,29 @@ const flexboxview1_style = StyleSheet.create(
       backgroundColor: '#8ed1fc'
     },
     text1: {
+      flex: -1,
       fontSize: 20,
       fontWeight: '900',
       fontFamily: 'monospace',
-      flex: -1,
       backgroundColor: '#00d084',
       margin: 16,
       padding: 16,
     },
     text2: {
+      flex: -1,
       fontSize: 16,
       fontWeight: '500',
       fontFamily: 'monospace',
-      flex: -1,
       color: '#c4def6',
       backgroundColor: '#1273de',
       margin: 16,
       padding: 16,
     },
     text3: {
+      flex: 1,
       fontSize: 12,
       fontWeight: '200',
       fontFamily: 'monospace',
-      flex: 1,
       color: '#697689',
       backgroundColor: '#d4c4fb',
       margin: 16,
@@ -50,18 +50,18 @@ const flexboxview1_style = StyleSheet.create(
 const flexboxview2_style = StyleSheet.create(
   {
     container: {
-      overflow: 'visible',
-      flexWrap: 'wrap',
       flex: 1,
       alignItems: 'stretch',
       justifyContent: 'flex-start',
       flexDirection: 'column',
+      overflow: 'visible',
+      flexWrap: 'wrap',
       backgroundColor: '#8ed1fc'
     },
     img_static: {
       flex: 1,
       width: undefined,
-      height: undefined,
+      height: 150,
       resizeMode: 'cover'
     },
     img_network: {
@@ -69,31 +69,31 @@ const flexboxview2_style = StyleSheet.create(
       resizeMode: 'contain'
     },
     text1: {
+      flex: -1,
       alignSelf: 'flex-end',
       fontSize: 20,
       fontWeight: '900',
       fontFamily: 'monospace',
-      flex: -1,
       backgroundColor: '#00d084',
       margin: 16,
       padding: 16,
     },
     text2: {
+      flex: -1,
       alignSelf: 'flex-start',
       fontSize: 16,
       fontWeight: '500',
       fontFamily: 'monospace',
-      flex: -1,
       color: '#c4def6',
       backgroundColor: '#1273de',
       margin: 16,
       padding: 16,
     },
     text3: {
+      flex: -1,
       fontSize: 12,
       fontWeight: '200',
       fontFamily: 'monospace',
-      flex: -1,
       color: '#697689',
       backgroundColor: '#d4c4fb',
       margin: 16,

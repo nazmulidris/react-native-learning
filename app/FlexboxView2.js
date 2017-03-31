@@ -1,7 +1,7 @@
 // @flow
 
 import React, {Component} from "react";
-import {Image, Text, View} from "react-native";
+import {Image, ScrollView, Text, View} from "react-native";
 
 import {flexboxview2_style} from "../styles/Styles";
 
@@ -23,19 +23,21 @@ class FlexboxView2 extends Component {
     let img_static = require('../static-res/maldives.jpg');
     
     return (
-      <View style={flexboxview2_style.v_container}>
-        <Image style={flexboxview2_style.img_static} source={img_static}>
-          <Text style={flexboxview2_style.text4}>Maldives Local Image</Text>
-        </Image>
-        <Image style={flexboxview2_style.img_network} source={img_network}>
-          <Text style={flexboxview2_style.text4}>Maldives Network Image</Text>
-        </Image>
-        <Text style={flexboxview2_style.text1}>{msg1}</Text>
-        <Text style={flexboxview2_style.text2}>{msg2}</Text>
-        <Text style={flexboxview2_style.text3}>{this.state.longText}</Text>
-        <Text style={flexboxview2_style.text3}>{this.state.longText}</Text>
-        <Text style={flexboxview2_style.text3}>{this.state.longText}</Text>
-        <Text style={flexboxview2_style.text3}>{this.state.longText}</Text>
+      <View style={flexboxview2_style.container}>
+        <ScrollView>
+          <Image style={flexboxview2_style.img_static} source={img_static}>
+            <Text style={flexboxview2_style.text4}>Maldives Local Image</Text>
+          </Image>
+          <Image style={flexboxview2_style.img_network} source={img_network}>
+            <Text style={flexboxview2_style.text4}>Maldives Network Image</Text>
+          </Image>
+          <Text style={flexboxview2_style.text1}>{msg1}</Text>
+          <Text style={flexboxview2_style.text2}>{msg2}</Text>
+          <Text style={flexboxview2_style.text3}>{this.state.longText}</Text>
+          <Text style={flexboxview2_style.text3}>{this.state.longText}</Text>
+          <Text style={flexboxview2_style.text3}>{this.state.longText}</Text>
+          <Text style={flexboxview2_style.text3}>{this.state.longText}</Text>
+        </ScrollView>
       </View>
     );
     

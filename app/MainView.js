@@ -42,9 +42,9 @@ class MainView extends Component {
           Double tap R on your keyboard to reload,{'\n'}
           Shake or press menu button for dev menu
         </Text>
-    
+  
         <View style={mainview_style.h_container}>
-      
+    
           <TouchableHighlight
             activeOpacity={1}
             underlayColor='#c1e1c5'
@@ -53,7 +53,7 @@ class MainView extends Component {
             }}>
             <Image source={imageUrl2} style={mainview_style.image}/>
           </TouchableHighlight>
-      
+    
           <TouchableHighlight
             activeOpacity={1}
             underlayColor='#c1e1c5'
@@ -62,7 +62,7 @@ class MainView extends Component {
             }}>
             <Image source={imageUrl3} style={mainview_style.image}/>
           </TouchableHighlight>
-    
+  
         </View>
         
         <ImageView uri={imageUrl.uri} height={110} width={193}/>
