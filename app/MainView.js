@@ -4,14 +4,10 @@ import React, {Component} from "react";
 import {Image, StatusBar, Text, TouchableHighlight, View} from "react-native";
 
 import type {ImageType} from "../flow/TypeAliases";
-import {ImageView} from "../app/ImageView";
 import {mainview_style} from "../styles/Styles";
 
 // note uri won't work on iOS with http
-const imageUrl: ImageType = {
-  uri: 'https://scontent.fsnc1-1.fna.fbcdn.net/v/t31.0-8/10659017_10102325633977818_5355456429616362295_o.jpg?oh=299b71a4d1ea43e010c6a91fbe75fb3d&oe=5959721C',
-  alt_text: 'react native icon'
-};
+const res_img = require('../static-res/react-native-img-by-maret-eiland.png');
 
 // note uri won't work on iOS with http
 const imageUrl2: ImageType = {
@@ -64,8 +60,8 @@ class MainView extends Component {
           </TouchableHighlight>
   
         </View>
-        
-        <ImageView uri={imageUrl.uri} height={110} width={193}/>
+  
+        <Image style={mainview_style.image2} source={res_img}/>
       </View>
     );
   }

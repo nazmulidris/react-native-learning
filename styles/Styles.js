@@ -166,6 +166,12 @@ const mainview_style = StyleSheet.create(
       width: 75,
       resizeMode: 'contain', //'cover' | 'contain'
     },
+    image2: {
+      flex: -1,
+      height: 100,
+      width: 150,
+      resizeMode: 'contain', //'cover' | 'contain'
+    },
   });
 
 function mainview_style_image(width: number, height: number) {
