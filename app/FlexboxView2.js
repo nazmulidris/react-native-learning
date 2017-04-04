@@ -17,7 +17,7 @@ class FlexboxView2 extends Component {
   }
   
   render() {
-    let msg1: string = "Flexbox View";
+    let msg1: string = "Flexbox View (tap to go back)";
     let msg2: string = "Details Text";
     let img_network = {uri: "https://i.imgur.com/RRUe0Mo.png"};
     let img_static = require('../static-res/maldives.jpg');

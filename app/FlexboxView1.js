@@ -17,7 +17,7 @@ class FlexboxView1 extends Component {
   }
   
   render() {
-    let msg1: string = "Flexbox View";
+    let msg1: string = "Flexbox View (tap to go back)";
     let msg2: string = "Details Text";
     
     return (
