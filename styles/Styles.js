@@ -110,7 +110,7 @@ const flexboxview2_style = StyleSheet.create(
   }
 );
 
-export const router_style = StyleSheet.create(
+const router_style = StyleSheet.create(
   {
     container: {
       flex: 1,
@@ -192,4 +192,5 @@ export {
   mainview_style_image,
   flexboxview1_style,
   flexboxview2_style,
+  router_style,
 };
